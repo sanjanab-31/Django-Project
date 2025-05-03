@@ -7,7 +7,9 @@
     <h1>Choose a Month</h1>
     <ul>
         {% for month in months %}
-            <li>{{ month }}</li>
+        <li>
+            <a href="/events/{{ month }}/">{{ month }}</a>
+        </li>
         {% endfor %}
     </ul>
 </body>
